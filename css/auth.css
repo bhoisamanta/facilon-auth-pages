@@ -31,10 +31,8 @@ body {
 
 .auth-background {
     min-height: 100vh;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    background-image: 
-        linear-gradient(135deg, rgba(102, 126, 234, 0.9) 0%, rgba(118, 75, 162, 0.9) 100%),
-        url('../assets/background.jpg');
+    /* Facilon brand colors - red and blue gradient matching logo */
+    background: linear-gradient(135deg, #c41e3a 0%, #4a7ba7 50%, #2c5aa0 100%);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -93,12 +91,15 @@ body {
 }
 
 .logo {
-    max-width: 180px;
+    max-width: 280px;
     height: auto;
-    margin-bottom: 24px;
+    margin-bottom: 28px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 12px;
 }
 
 .auth-header h1 {
@@ -110,7 +111,7 @@ body {
 }
 
 .brand-highlight {
-    color: #667eea;
+    color: #c41e3a;
     font-weight: 700;
 }
 
@@ -159,9 +160,9 @@ body {
 
 #api input:focus {
     outline: none;
-    border-color: #667eea;
+    border-color: #c41e3a;
     background: #fff;
-    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    box-shadow: 0 0 0 3px rgba(196, 30, 58, 0.1);
 }
 
 /* Labels */
@@ -183,7 +184,8 @@ body {
 #api button.primary-button {
     width: 100%;
     padding: 14px 20px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    /* Facilon brand colors for button - matching logo */
+    background: linear-gradient(135deg, #c41e3a 0%, #2c5aa0 100%);
     color: white;
     border: none;
     border-radius: 8px;
@@ -200,8 +202,8 @@ body {
 #api button[type="submit"]:hover,
 #api button.primary-button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(102, 126, 234, 0.4);
-    background: linear-gradient(135deg, #5a6ed8 0%, #6a3f92 100%);
+    box-shadow: 0 8px 24px rgba(196, 30, 58, 0.4);
+    background: linear-gradient(135deg, #a81830 0%, #234780 100%);
 }
 
 #api button[type="submit"]:active,
@@ -221,8 +223,8 @@ body {
 #api button[type="button"],
 #api button.secondary-button {
     background: transparent;
-    border: 2px solid #667eea;
-    color: #667eea;
+    border: 2px solid #c41e3a;
+    color: #c41e3a;
     padding: 12px 20px;
     border-radius: 8px;
     font-size: 15px;
@@ -235,10 +237,10 @@ body {
 
 #api button[type="button"]:hover,
 #api button.secondary-button:hover {
-    background: #667eea;
+    background: #c41e3a;
     color: white;
     transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.3);
+    box-shadow: 0 6px 20px rgba(196, 30, 58, 0.3);
 }
 
 /* Error messages */
@@ -289,14 +291,14 @@ body {
 
 /* Links in API container */
 #api a {
-    color: #667eea;
+    color: #c41e3a;
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 #api a:hover {
-    color: #5a6ed8;
+    color: #a81830;
     text-decoration: underline;
 }
 
@@ -348,14 +350,14 @@ body {
 }
 
 .link-primary {
-    color: #667eea;
+    color: #c41e3a;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s ease;
 }
 
 .link-primary:hover {
-    color: #5a6ed8;
+    color: #a81830;
     text-decoration: underline;
 }
 
@@ -372,7 +374,7 @@ body {
 }
 
 .link-back {
-    color: #667eea;
+    color: #c41e3a;
     text-decoration: none;
     font-weight: 500;
     display: inline-flex;
@@ -382,7 +384,7 @@ body {
 }
 
 .link-back:hover {
-    color: #5a6ed8;
+    color: #a81830;
     gap: 8px;
 }
 
@@ -424,7 +426,7 @@ body {
 }
 
 .terms-notice a {
-    color: #667eea;
+    color: #c41e3a;
     text-decoration: none;
     font-weight: 500;
 }
@@ -445,7 +447,7 @@ body {
 }
 
 .footer-links a:hover {
-    color: #667eea;
+    color: #c41e3a;
     text-decoration: underline;
 }
 
@@ -551,7 +553,7 @@ body {
 
 #api .social-button:hover,
 #api button.social:hover {
-    border-color: #667eea;
+    border-color: #c41e3a;
     background: #f9fafb;
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
@@ -658,7 +660,7 @@ body {
 a:focus-visible,
 button:focus-visible,
 input:focus-visible {
-    outline: 2px solid #667eea;
+    outline: 2px solid #c41e3a;
     outline-offset: 2px;
 }
 
