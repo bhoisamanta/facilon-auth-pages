@@ -31,15 +31,18 @@ body {
 
 .auth-background {
     min-height: 100vh;
+    height: auto;
     /* Facilon brand colors - red and blue gradient matching logo */
     background: linear-gradient(135deg, #c41e3a 0%, #4a7ba7 50%, #2c5aa0 100%);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
+    overflow-y: auto;
 }
 
 .auth-container {
@@ -71,6 +74,8 @@ body {
         0 0 0 1px rgba(255, 255, 255, 0.1);
     padding: 48px 40px;
     margin-bottom: 24px;
+    width: 100%;
+    max-width: 480px;
 }
 
 .signup-box {
@@ -484,6 +489,8 @@ body {
 .help-text {
     text-align: center;
     margin-top: 16px;
+    margin-bottom: 20px;
+    width: 100%;
 }
 
 .help-text p {

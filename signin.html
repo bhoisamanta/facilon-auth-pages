@@ -25,9 +25,9 @@
                 <div class="auth-footer">
                     <p>&copy; 2026 Facilon Services. All rights reserved.</p>
                     <div class="footer-links">
-                        <a href="#" onclick="openTerms()">Terms of Service</a>
+                        <a href="http://localhost:3000/service-agreement" target="_blank">Terms of Service</a>
                         <span>|</span>
-                        <a href="#" onclick="openPrivacy()">Privacy Policy</a>
+                        <a href="http://localhost:3000/privacy-policy" target="_blank">Privacy Policy</a>
                     </div>
                 </div>
             </div>
@@ -38,31 +38,7 @@
         </div>
     </div>
     
-    <script src="https://bhoisamanta.github.io/facilon-auth-pages/js/auth.js"></script>
-    <script>
-        // Page-specific initialization
-        document.addEventListener('DOMContentLoaded', function() {
-            console.log('Facilon Sign-In page loaded');
-            initializePage('signin');
-        });
-
-        function redirectToSignup() {
-            // Azure will handle the redirect to signup flow
-            window.location.href = window.location.href.replace('signin', 'signup');
-        }
-
-        function redirectToReset() {
-            // Azure will handle the redirect to password reset flow
-            window.location.href = window.location.href.replace('signin', 'resetpassword');
-        }
-
-        function openTerms() {
-            window.open('http://localhost:3000/service-agreement', '_blank');
-        }
-
-        function openPrivacy() {
-            window.open('http://localhost:3000/privacy-policy', '_blank');
-        }
-    </script>
+    <!-- Azure B2C loads this page and escapes inline scripts, so we use onclick attributes directly -->
+    <!-- The auth.js file will be loaded by Azure but custom inline scripts won't execute -->
 </body>
 </html>
