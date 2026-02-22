@@ -22,7 +22,9 @@
                 <!-- Azure Entra External ID injects authentication form here -->
                 <div id="api" class="api-container"></div>
                 
-                <!-- Removed: Create account and forgot password links (hidden via CSS if Azure injects them) -->
+                <div class="auth-links">
+                    <a href="#" class="link-secondary" onclick="redirectToReset()">Forgot your password?</a>
+                </div>
                 
                 <div class="auth-footer">
                     <p>&copy; 2026 Facilon Services. All rights reserved.</p>
