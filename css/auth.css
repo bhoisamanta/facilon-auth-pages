@@ -254,11 +254,35 @@ body {
 #api .alert-danger {
     background: #fef2f2;
     color: #dc2626;
-    padding: 12px 16px;
+    padding: 8px 12px;
     border-radius: 6px;
-    font-size: 14px;
-    margin: 16px 0;
-    border-left: 4px solid #dc2626;
+    font-size: 13px;
+    margin: 8px 0;
+    border-left: 3px solid #dc2626;
+    line-height: 1.4;
+}
+
+/* Hide errors when empty or aria-hidden=true */
+#api .error[aria-hidden="true"],
+#api .error:empty,
+#api .error p:empty {
+    display: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+/* Item-level errors (field-specific) */
+#api .error.itemLevel {
+    padding: 6px 10px;
+    margin: 4px 0 8px 0;
+    font-size: 12px;
+}
+
+/* Page-level errors */
+#api .error.pageLevel {
+    padding: 10px 14px;
+    margin: 12px 0;
+    font-size: 13px;
 }
 
 /* Success messages */
@@ -267,11 +291,12 @@ body {
 #api .alert-success {
     background: #f0fdf4;
     color: #16a34a;
-    padding: 12px 16px;
+    padding: 10px 14px;
     border-radius: 6px;
-    font-size: 14px;
-    margin: 16px 0;
-    border-left: 4px solid #16a34a;
+    font-size: 13px;
+    margin: 12px 0;
+    border-left: 3px solid #16a34a;
+    line-height: 1.4;
 }
 
 /* Info messages */
@@ -279,11 +304,12 @@ body {
 #api .alert-info {
     background: #eff6ff;
     color: #2563eb;
-    padding: 12px 16px;
+    padding: 10px 14px;
     border-radius: 6px;
-    font-size: 14px;
-    margin: 16px 0;
-    border-left: 4px solid #2563eb;
+    font-size: 13px;
+    margin: 12px 0;
+    border-left: 3px solid #2563eb;
+    line-height: 1.4;
 }
 
 /* Checkboxes and radio buttons */
