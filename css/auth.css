@@ -302,6 +302,24 @@ body {
     text-decoration: underline;
 }
 
+/* Hide Azure-injected forgot password link */
+#api #forgotPassword,
+#api a[href*="forgotPassword"],
+#api a[id="forgotPassword"],
+#api .forgotPassword,
+#api .forgot-password,
+#api a[aria-label*="forgot"],
+#api a[aria-label*="Forgot"] {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/* Hide any paragraph containing forgot password link */
+#api p:has(#forgotPassword),
+#api div:has(#forgotPassword) {
+    display: none !important;
+}
+
 /* Dividers */
 #api hr,
 #api .divider {
