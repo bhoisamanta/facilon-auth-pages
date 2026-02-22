@@ -320,6 +320,27 @@ body {
     display: none !important;
 }
 
+/* Hide Azure-injected create account/sign-up link */
+#api #createAccount,
+#api a[href*="signup"],
+#api a[href*="SignUp"],
+#api a[id="createAccount"],
+#api .createAccount,
+#api .create-account,
+#api a[aria-label*="create"],
+#api a[aria-label*="Create"],
+#api a[aria-label*="sign up"],
+#api a[aria-label*="Sign up"] {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/* Hide any paragraph containing create account link */
+#api p:has(#createAccount),
+#api div:has(#createAccount) {
+    display: none !important;
+}
+
 /* Dividers */
 #api hr,
 #api .divider {
