@@ -48,7 +48,7 @@ Look at the domain in Azure portal:
    - **Supported account types**: "Accounts in any identity provider or organizational directory (for authenticating users with user flows)"
    - **Redirect URI**:
      - Platform: **Web**
-     - URI: `http://localhost:3000/auth/callback`
+     - URI: `http://localhost:3000/login/callback` (must match backend `azure.b2c.redirect-uri`)
 4. **Click**: "Register"
 
 ### Step 4: Record Application Details
@@ -66,11 +66,11 @@ Directory (tenant) ID: _____________________________________
 
 1. **Navigate**: Your app → **Authentication**
 2. **Platform configurations** → **Add a platform** → **Single-page application**
-3. **Add Redirect URIs**:
+3. **Add Redirect URIs** (must match your app; Facilon uses `/login/callback`):
    ```
-   http://localhost:3000/auth/callback
+   http://localhost:3000/login/callback
    http://localhost:3000
-   https://yourdomain.com/auth/callback
+   https://yourdomain.com/login/callback
    ```
 4. **Logout URL**: `http://localhost:3000/logout`
 5. **Implicit grant**:
