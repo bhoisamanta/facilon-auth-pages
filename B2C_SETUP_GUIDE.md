@@ -105,7 +105,8 @@ Directory (tenant) ID: _____________________________________
 1. **Left menu**: Click **"Identity providers"**
 2. **Select**:
    - ✅ **Email signup** (for local accounts)
-3. **Optional**: Add **"Microsoft Account"**, **"Google"**, etc.
+3. **Optional – Social login**: Add **Google**, **Facebook**, **Microsoft Account**, etc.  
+   → **See [SOCIAL_LOGIN_SETUP.md](./SOCIAL_LOGIN_SETUP.md)** for step-by-step instructions (creating apps in Google/Facebook/Microsoft, client ID/secret, redirect URIs, and enabling them in B2C).
 4. **Click**: "Save"
 
 ### Step 9: User Attributes
